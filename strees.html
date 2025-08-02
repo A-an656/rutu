@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pillu, Spa Time 💆‍♀️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to top right, #d0f1f1, #ffe1f1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #00bcd4;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    #playButton {
+      padding: 10px 20px;
+      background: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    #playButton:hover {
+      background: #0097a7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Hidden Audio -->
+  <audio id="spaAudio" loop>
+    <source src="./despacati.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>Feeling Stressy, Pillu? 💆‍♀️</h1>
+    <p>
+      Agar stress ho raha ho na toh mujhse baat kar le na…<br />
+      Apna stress mujhe de de, thoda halka feel hoga 💖<br />
+      Tere din ke baare mein bol, ya fir mere pagal kisse sun le...<br />
+      Has degi tu, aur mood apne aap set ho jayega 😚<br />
+      Tu toh meri cute tension wali cutie he 🥹🌸
+    </p>
+    <img src="./streesy.jpg" alt="Spa Relax Mood" />
+    <br />
+    <button id="playButton">Play cutiepiee pilaa play kar Music zatu 🎶</button>
+  </div>
+
+  <script>
+    const playBtn = document.getElementById('playButton');
+    const audio = document.getElementById('spaAudio');
+
+    playBtn.addEventListener('click', () => {
+      audio.play();
+      playBtn.textContent = "🎵 Playing...";
+      playBtn.disabled = true;
+    });
+  </script>
+
+</body>
+</html>

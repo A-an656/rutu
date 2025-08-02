@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sips & Bites 🍰 Our First Festival</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #dceeff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+      overflow-y: auto;
+    }
+
+    .memory-box {
+      background: #fff5facc;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      color: #e91e63;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      margin: 1rem 0;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 14px;
+      margin: 1rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ad1457;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="cafeAudio" loop>
+    <source src="./memorise.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="memory-box">
+    <h1>✨ 24 July 2021 – Our First Festival 🎉</h1>
+    <p>
+      That day... Sips & Bites wasn’t just a café — it was our celebration spot. 🥺<br>
+      You looked like sunshine ☀️, sitting right in front of the old Westside (now Zudio).<br>
+      Cake tha... candles the... aur sabse khaas thi — tum. 💖<br>
+      That moment made my whole life feel like a festival I never want to end. 🎊
+    </p>
+
+    <img src="./rutucake.jpg" alt="Our first celebration at Sips & Bites" />
+
+    <button onclick="document.getElementById('cafeAudio').play()">Play Memory Music 🎶</button>
+  </div>
+
+</body>
+</html>

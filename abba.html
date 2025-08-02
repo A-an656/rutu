@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎥 Puzzle 4: Dialogue Time</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #fffde7, #ffe0b2);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-y: auto;
+    }
+
+    .dialogue-box {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      padding: 30px;
+      max-width: 560px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 1.3s ease;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #ff6f00;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .dialogue-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+      animation: float 5s ease-in-out infinite;
+    }
+
+    .tease {
+      font-style: italic;
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    .music-btn {
+      margin-top: 1rem;
+      background: #ff6f00;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-inline: 10px;
+      transition: 0.3s ease;
+    }
+
+    .music-btn:hover {
+      background: #e65100;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="dialogueMusic" loop>
+    <source src="./jeenedo.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="dialogue-box">
+    <h1>🎥 Puzzle 4: Dialogue Time</h1>
+    <p>
+      “Next time aavoge to khana kha ke jana…” —  
+      Classic line by **The Permission Police of BIGCE** 🍽️🚫<br><br>
+      Ek aisi beti jiske liye *Google Maps* ka use bhi ghar se puchke hota tha 😅<br>
+      *"Ghumne jaana tha, par Papa bole: ‘Beta balcony tak jao, hawa wahan bhi achhi chalti hai.’”*<br><br>
+      Hitler nahi the... par timetable unka German manual se hi inspired lagta tha 🇩🇪
+    </p>
+
+    <img src="./abba.jpg" alt="Hitler House Rules" class="dialogue-img" />
+
+    <p class="tease">"Uske liye outing = mandir jaake jaldi ghar wapas aana." 🙃</p>
+
+    <button class="music-btn" onclick="document.getElementById('dialogueMusic').play()">▶️ Play Ghar Ka Theme</button>
+    <button class="music-btn" onclick="document.getElementById('dialogueMusic').pause()">⏸️ Pause</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧩 Unlock Our Moments - Rutuja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffd6e8, #dbefff);
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #ff4081;
+      margin-bottom: 0.5rem;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .puzzle-container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: #ffffffa8;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .puzzle-block {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 12px;
+      background: #f9f9f9;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .clue {
+      font-size: 1rem;
+      margin: 0.5rem 0 1rem;
+      color: #555;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      width: 70%;
+      max-width: 300px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #ff4081;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="puzzle-container">
+    <h1>🔒 The Game of Us</h1>
+    <p class="intro">Ready to unlock some secrets? 😌 Let's begin!</p>
+
+    <div class="puzzle-block">
+      <h2>🔐 Puzzle 1: First Celebration</h2>
+      <p class="clue">Special day with your first friend, in front of Zudio, Old Westside. What's the place name?</p>
+      <input type="password" id="puzzle1" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(1, 'sipsandbites', 'page1.html')">Unlock</button>
+      <p id="result1" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>🛏️ Puzzle 2: The Lion’s Den</h2>
+      <p class="clue">Your happy place from old hostel life (3.5 years). What was it?</p>
+      <input type="password" id="puzzle2" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(2, 'hostelbed', 'page2.html')">Unlock</button>
+      <p id="result2" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>📚 Puzzle 3: Crush</h2>
+      <p class="clue">Tallest tower in BIGCE. Who broke your heart?</p>
+      <input type="password" id="puzzle3" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(3, 'mukkusir', 'page3.html')">Unlock</button>
+      <p id="result3" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>🎥 Puzzle 4: Dialogue Time</h2>
+      <p class="clue">Who said “Next time aavoge to khana kha ke jana”? Hint: Hitler</p>
+      <input type="password" id="puzzle4" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(4, 'abbanahimanaenge', 'page4.html')">Unlock</button>
+      <p id="result4" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>🎶 Puzzle 5: Viral Song</h2>
+      <p class="clue">Complete the meme line from that festival: “Mere...”</p>
+      <input type="password" id="puzzle5" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(5, 'yesuyesu', 'page5.html')">Unlock</button>
+      <p id="result5" class="result"></p>
+    </div>
+  </div>
+
+  <script>
+    function checkPuzzle(number, correctPassword, nextPage) {
+      const input = document.getElementById(`puzzle${number}`).value.trim().toLowerCase();
+      const result = document.getElementById(`result${number}`);
+
+      if (input === correctPassword) {
+        result.textContent = 'Unlocked! Redirecting...';
+        result.style.color = 'green';
+        setTimeout(() => {
+          window.location.href = nextPage;
+        }, 1200);
+      } else {
+        result.textContent = 'Wrong password. Try again 😔';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+</body>
+</html>

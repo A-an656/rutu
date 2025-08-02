@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pillu Don't Be Sad 😢</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fbc2eb, #a6c1ee);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #playButton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    #playButton:hover {
+      background: #ff4081;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Hidden Audio -->
+  <audio id="sadAudio" loop>
+    <source src="./aakhekaru.mp3.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>Pillu, Please Don't Be Sad 😢</h1>
+    <p>
+      Whenever your mood is off, mine automatically goes down too.<br />
+      I may not always have the right words, and sometimes life doesn't give us easy options...<br />
+      But I promise, even in silence — I’m with you.<br />
+      Your sadness hits me harder than anything else. 💔<br />
+      Smile for me once… that’s all I want.
+    </p>
+    <img src="./sad2.jpg" alt="Sad Feeling" />
+
+    <!-- 🎵 Play Button -->
+    <button id="playButton">Click here to play sad music 🎶</button>
+  </div>
+
+  <script>
+    const playBtn = document.getElementById('playButton');
+    const audio = document.getElementById('sadAudio');
+
+    playBtn.addEventListener('click', () => {
+      audio.play();
+      playBtn.textContent = "🎶 Music Playing..."; // Optional UI feedback
+      playBtn.disabled = true; // Optional: disable button
+    });
+  </script>
+
+</body>
+</html>

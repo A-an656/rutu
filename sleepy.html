@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ninni Time for My Pillu 💤</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fef6f9, #e1f0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;  /* ✅ Scroll enabled when needed */
+}
+
+    .ninni-box {
+      background: #fff7fbcc;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #3f51b5;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      margin: 1rem 0;
+      line-height: 1.6;
+    }
+    img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 14px;
+      margin: 1rem 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    button {
+      background-color: #3f51b5;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: #2c387e;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="ninniAudio" loop>
+    <source src="./sahiba.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="ninni-box">
+    <h1>My Sleepy Princess 👸💤</h1>
+    <p>
+      Pillu ko ninni aayi? Toh chalo ek pyara lullaby bajate hain 🎵<br>
+      Aaj ke liye duniya se disconnect ho jao… sirf apni aankhon ko rest do 🫶<br>
+      Main yahin hoon… tumhare sapno ka pehredar ban ke 😌💗<br>
+      Ninni aate aate tum muskurana mat bhoolna...<br>
+      Sweet dreams, meri jaan ✨🌙
+    </p>
+    <img src="./sleepypillu.jpg" alt="Sleepy Pillu" />
+    <button onclick="document.getElementById('ninniAudio').play()">Play Ninni Lullaby 🛌</button>
+  </div>
+
+</body>
+</html>

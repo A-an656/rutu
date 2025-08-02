@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offie Mood, But I’m Right Here 🌧️</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to top right, #dce3f3, #fde4f7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .box {
+      background: #ffffffb3;
+      border-radius: 20px;
+      padding: 25px;
+      max-width: 520px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #607d8b;
+    }
+    p {
+      color: #444;
+      font-size: 1.05rem;
+      margin: 1rem 0;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 16px;
+      margin: 1rem 0;
+    }
+    button {
+      background: #607d8b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #455a64;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="offieAudio" loop>
+    <source src="offline.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="box">
+    <h1>Mood Off, Baby? 🌧️</h1>
+    <p>
+      Offie ho na? Mujhe pata chalta hai bina bataye bhi...<br>
+      Tera chehra hi toh mera weather forecast hai ☁️<br>
+      Chup rehna bhi chalega... bas saath rehna hamesha 💞<br>
+      Aaja… ek funny story sunata hoon... aur ek *jadoo ki chai* bhi ☕😌<br>
+      Mood theek kar le meri jaan… warna mera bhi *Offie* ho jaayega 🥺
+    </p>
+    <img src="./offline.jpg" alt="Mood Off Photo" />
+    <button onclick="document.getElementById('offieAudio').play()">Play Mood Lifter 🎵</button>
+  </div>
+
+</body>
+</html>

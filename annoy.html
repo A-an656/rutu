@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Uff... Gussa Wali Tu 😒</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffd6e8, #e0f7fa);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #ff4081;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    #playButton {
+      padding: 10px 20px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background 0.3s ease;
+    }
+
+    #playButton:hover {
+      background: #ff4081;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Audio (hidden) -->
+  <audio id="annoyAudio" loop>
+    <source src="./iteam.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>Uff... Tu Fir Se Gusse Mein 😒</h1>
+    <p>
+      Yes yes, I know... I always annoy you 😝<br />
+      But kya karu? Mera mann hi nahi karta kabhi kabhi tujhse baat kare bina...<br />
+      Haan thoda irritate karta hu, thoda tease bhi, lekin sirf isliye...<br />
+      Kyunki tu annoy hoti hai toh aur bhi zyada pyaari lagti hai 🥹<br />
+      Tu meri cute gusse wali mirchi hai 🌶️💖<br />
+      Chal ab ek smile de de na, warna aur tang karunga 😜
+    </p>
+    <img src="./annoy.jpg" alt="Gussa wali cutie" />
+    <br />
+    <button id="playButton">Click here to play our annoying tune 🔊</button>
+  </div>
+
+  <script>
+    const btn = document.getElementById('playButton');
+    const audio = document.getElementById('annoyAudio');
+
+    btn.addEventListener('click', () => {
+      audio.play();
+      btn.textContent = "🎶 Music Playing...";
+      btn.disabled = true;
+    });
+  </script>
+
+</body>
+</html>

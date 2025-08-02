@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Puzzle 3: Tall Tower, Taller Heartbreak 💔🏢</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #fce3ec, #fdf6ff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-y: auto;
+    }
+
+    .tower-box {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      padding: 30px;
+      max-width: 540px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #d81b60;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .tower-img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .roast {
+      font-style: italic;
+      color: #777;
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+    }
+
+    .music-btn {
+      margin-top: 1rem;
+      background: #d81b60;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-inline: 10px;
+      transition: 0.3s ease;
+    }
+
+    .music-btn:hover {
+      background: #ad1457;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="sadMusic" loop>
+    <source src="./llage.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="tower-box">
+    <h1>📚 Puzzle 3: The Tallest Tower 💔</h1>
+    <p>
+      "Hey! I'm Mukky Sir... and I'm here to announce the *BIGGEST FALL* of the semester —<br>
+      Anand ka crush ne *uske sapne*, *uski hopes*, sabko third-floor se neeche fek diya."<br><br>
+      Height? 5'10" 😳  
+      Age? Papa ke saath confuse ho jaaye 🧓  
+      Confidence? NASA ka rocket bhi utna high nahi jaata 🚀<br><br>
+      But heart? Pure Anand ka — abhi bhi recovery mode me hai 😔
+    </p>
+
+    <img src="./crush-tower.jpg" alt="Tall Tower" class="tower-img" />
+
+    <p class="roast">"Mujhe laga tower high hai… pata chala *attitude* aur zyada high tha."</p>
+
+    <button class="music-btn" onclick="document.getElementById('sadMusic').play()">▶️ Play Broken Heart Track</button>
+    <button class="music-btn" onclick="document.getElementById('sadMusic').pause()">⏸️ Pause</button>
+  </div>
+
+</body>
+</html>

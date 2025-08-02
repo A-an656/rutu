@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meri Lovey Cutiepie 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fef6f9, #e1f0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto;  /* ✅ Scroll enabled when needed */
+}
+
+    .lovey-box {
+      background: rgba(255, 245, 250, 0.9);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 520px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease;
+    }
+    h1 {
+      font-size: 2.3rem;
+      color: #e91e63;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #333;
+      margin: 1rem 0;
+      line-height: 1.7;
+    }
+    img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 16px;
+      margin: 1rem 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    button {
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 24px;
+      font-weight: bold;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #c2185b;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="loveyAudio" loop>
+    <source src="./lukkachuupi.mp3.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="lovey-box">
+    <h1>For My Lovey Dovey 💘</h1>
+    <p>
+      Tu sabse pyari feeling hai meri zindagi ki 💞<br>
+      Jab tu hans ke bolti hai na... sab kuch ruk jaata hai mere liye ✨<br>
+      Aaj koi baat nahi... sirf ek sweet song aur tu 🫶<br>
+      Bass aankh band kar aur feel kar — tu safe hai, loved hai, special hai 💖<br>
+      Mera pyaar tujhmein har pal saath hai 💑
+    </p>
+    <img src="./cutieeeeee.jpg" alt="Lovey Cutie" />
+    <button onclick="document.getElementById('loveyAudio').play()">Play Lovey Song 🎶</button>
+  </div>
+
+</body>
+</html>

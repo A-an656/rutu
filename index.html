@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You’re My Universe, Rutuja 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #ffdde1, #f8e1f4, #dff1ff);
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.4s ease-in;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      color: #ff4081;
+      text-shadow: 2px 2px 10px rgba(255,255,255,0.7);
+      margin: 2rem 1rem 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+
+    .emoji-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+      gap: 22px;
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .emoji-grid a {
+      font-size: 2.5rem;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 20px 10px;
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ff69b4;
+    }
+
+    .emoji-grid a:hover {
+      transform: scale(1.12) rotate(-3deg);
+      box-shadow: 0 12px 24px rgba(255, 105, 180, 0.3);
+    }
+
+    .emoji-grid a div {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #e91e63;
+    }
+
+    footer {
+      font-size: 0.9rem;
+      color: #888;
+      margin: 2rem 0 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .floating-hearts::before {
+      content: "💫🌸✨💖🦩";
+      font-size: 4rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: floaty 15s linear infinite;
+      opacity: 0.1;
+    }
+
+    @keyframes floaty {
+      0% { transform: translateY(0) rotate(0); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+
+    .puzzle-container {
+      max-width: 700px;
+      margin: 1rem auto;
+      padding: 20px;
+      background: #ffffffd6;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .puzzle-block {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 12px;
+      background: #f9f9f9;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .clue {
+      font-size: 1rem;
+      margin: 0.5rem 0 1rem;
+      color: #555;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      width: 70%;
+      max-width: 300px;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #ff4081;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="mood-page floating-hearts">
+
+  <!-- Background Love Song -->
+  <audio autoplay loop>
+    <source src="images/love-theme.mp3" type="audio/mpeg">
+  </audio>
+
+  <h1>"You’re not my world, you’re my reason to <br> believe the world is still beautiful, Rutuja 🌙"</h1>
+  <p class="subtitle">How are you feeling right now, my Lokhande?</p>
+
+  <div class="emoji-grid">
+    <a href="sad.html">🥲<div>Sadiee</div></a>
+    <a href="./annoy.html">😒<div>Annoyed</div></a>
+    <a href="strees.html">🤯<div>Stressy</div></a>
+    <a href="mood.html">😐<div>Blanky</div></a>
+    <a href="sleepy.html">🛌<div>Sleepy</div></a>
+    <a href="love.html">😌<div>Lovey</div></a>
+    <a href="wow.html">😲<div>Shockyy</div></a>
+    <a href="happy.html">😊<div>Happy</div></a>
+    <a href="amazing.html">🤩<div>Wowie</div></a>
+    <a href="sleepy.html">🌄<div>Ninni</div></a>
+    <a href="cute.html">😍<div>Cutie</div></a>
+    <a href="sad.html">😢<div>Broken</div></a>
+    <a href="mood-off.html">🌧️<div>Offie</div></a>
+    <a href="shock.html">😵<div>Whaaat</div></a>
+    <a href="angry.html">😡<div>Angryy</div></a>
+    <a href="depression.html">🔟<div>Darkie</div></a>
+    <a href="happy-chill.html">😎<div>Chilll</div></a>
+  </div>
+
+  <div class="puzzle-container">
+    <h1>🔐 The Game of Us</h1>
+    <p class="intro">Ready to unlock some secrets? 😌 Let's begin!</p>
+
+    <div class="puzzle-block">
+      <h2>🔐 Puzzle 1: First Celebration</h2>
+      <p class="clue">Special day with your first friend, in front of Zudio, Old Westside. What's the place name?</p>
+      <input type="password" id="puzzle1" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(1, 'sipsandbites', 'sipsandbites.html')">Unlock</button>
+      <p id="result1" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>🛎️ Puzzle 2: The Lion’s Den</h2>
+      <p class="clue">Your happy place from old hostel life (3.5 years). What was it?</p>
+      <input type="password" id="puzzle2" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(2, 'hostelbed', 'hostel.html')">Unlock</button>
+      <p id="result2" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>📚 Puzzle 3: Crush</h2>
+      <p class="clue">Tallest tower in BIGCE. Who broke your heart?</p>
+      <input type="password" id="puzzle3" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(3, 'mukkusir', 'mukku.html')">Unlock</button>
+      <p id="result3" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>🎥 Puzzle 4: Dialogue Time</h2>
+      <p class="clue">Who said “Next time aavoge to khana kha ke jana”? Hint: Hitler</p>
+      <input type="password" id="puzzle4" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(4, 'abbanahimanaenge', 'abba.html')">Unlock</button>
+      <p id="result4" class="result"></p>
+    </div>
+
+    <div class="puzzle-block">
+      <h2>🎶 Puzzle 5: Viral Song</h2>
+      <p class="clue">Complete the meme line from that festival: “Mere...”</p>
+      <input type="password" id="puzzle5" placeholder="Enter your answer...">
+      <button onclick="checkPuzzle(5, 'yesuyesu', 'yesu.html')">Unlock</button>
+      <p id="result5" class="result"></p>
+    </div>
+  </div>
+<footer>
+  Made with 🌸 love, 💻 code & 💋 madness by Anand — for My Rutu Lokhande 🌙<br>
+  P.S. Sorry agar kuch galat laga ho... time kam tha isliye ChatGPT se madat li 😔<br>
+  Bas tu muskuraaye, yehi meri zimmedari hai. Tu 3-4 din ignore karti rahi, toh laga stress mein hai...<br>
+  Isliye bina soche banaya sab — kyunki tu meri duniya hai. 🫶<br>
+  Aur haan... literally chakkar aa gaya tha banaate banaate sach me bol raha hu me chakkar aaye kitne salo badd asacchi me aayie 😵‍💫 — but worth it, agar tujhe thoda bhi smile aaye toh. 💖
+</footer>
+
+
+  <script>
+    function checkPuzzle(number, correctPassword, nextPage) {
+      const input = document.getElementById(`puzzle${number}`).value.trim().toLowerCase();
+      const result = document.getElementById(`result${number}`);
+
+      if (input === correctPassword) {
+        result.textContent = 'Unlocked! Redirecting...';
+        result.style.color = 'green';
+        setTimeout(() => {
+          window.location.href = nextPage;
+        }, 1200);
+      } else {
+        result.textContent = 'Wrong password. Try again 😔';
+        result.style.color = 'red';
+      }
+    }
+  </script>
+
+</body>
+</html>

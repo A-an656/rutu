@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎶 Puzzle 5: Viral Song Energy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #f3e5f5, #fce4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-y: auto;
+    }
+
+    .meme-box {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 25px;
+      padding: 30px;
+      max-width: 560px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 1.3s ease;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #ab47bc;
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .meme-img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      margin-bottom: 1rem;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .caption {
+      font-style: italic;
+      font-size: 1rem;
+      color: #777;
+    }
+
+    .music-btn {
+      margin-top: 1rem;
+      background: #ab47bc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-inline: 10px;
+      transition: 0.3s ease;
+    }
+
+    .music-btn:hover {
+      background: #8e24aa;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="viralSong" loop>
+    <source src="./yesuuuu.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="meme-box">
+    <h1>🎶 Puzzle 5: Viral Meme Moment</h1>
+    <p>
+      “Mere...” — and boom 💥<br>
+      hee mera yesu yesu <br><br>
+     
+      <br><br>
+     mera  yesu yesu .<br>
+     mera  yesu yesu ?** 😏
+    </p>
+
+    <img src="./yesu .jpg" alt="Viral Meme Queen" class="meme-img" />
+
+    <p class="caption">"Bas ek line... aur Anand ne reel bana diya tha 🤳"</p>
+
+    <button class="music-btn" onclick="document.getElementById('viralSong').play()">▶️ Play Meme Audio</button>
+    <button class="music-btn" onclick="document.getElementById('viralSong').pause()">⏸️ Pause</button>
+  </div>
+
+</body>
+</html>

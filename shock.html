@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SHOCKED? Oh My Pillu! 😲</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f9f3ff, #e6f7ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .shock-box {
+      background: #ffffffcc;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 520px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #673ab7;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #444;
+      margin: 1rem 0;
+    }
+    img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 14px;
+      margin: 1rem 0;
+    }
+    button {
+      background-color: #7c4dff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 12px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5e35b1;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="shockAudio" loop>
+    <source src="./whataaaa.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="shock-box">
+    <h1>Pillu Shocked?! 😲⚡</h1>
+    <p>
+      Aree kya huaa? Shock lag gaya kya meri jaan ko? 😮<br>
+      Batao na batao… mujhe bhi curiosity ho rahi hai 😆<br>
+      Mujhe pata hai… tumhari “Kyaaaa?!” wali awaaz hi cutest hai 😍<br>
+      Chal ek meme bhejta hoon… thoda hasi aa jaaye 😜<br>
+      Aur haan, shock ke saath main hoon… grounding wire ban ke ⚡❤️
+    </p>
+    <img src="./what.jpg" alt="Shocked Girl Funny" />
+    <button onclick="document.getElementById('shockAudio').play()">Shock Se Bachao Music 🎵</button>
+  </div>
+
+</body>
+</html>

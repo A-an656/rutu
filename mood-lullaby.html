@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleepy You, My Cutie Pie 😴</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #d7f0ff, #fce4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      color: #555;
+      margin-bottom: 0.5rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #777;
+      max-width: 300px;
+      margin-bottom: 1.5rem;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.imgur.com/6RN6U1e.png') repeat;
+      background-size: contain;
+      opacity: 0.05;
+      animation: starScroll 100s linear infinite;
+    }
+
+    @keyframes starScroll {
+      from { background-position: 0 0; }
+      to { background-position: -1000px 1000px; }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="audio/lullaby.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="stars"></div>
+
+  <img src="images/rutuja-sleepy.jpg" alt="My sleepy Rutuja 💖" />
+
+  <h1>Close your eyes, my moonchild 🌙</h1>
+  <p>Even the stars are jealous of how peacefully you sleep. Sweet dreams, Pillu 😴</p>
+</body>
+</html>

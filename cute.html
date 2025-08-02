@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Cutie Pie 😍</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #fff0f5, #ffe0f0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .cutie-box {
+      background: #ffffffdd;
+      border-radius: 22px;
+      padding: 30px;
+      max-width: 540px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    h1 {
+      font-size: 2.6rem;
+      color: #e91e63;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #555;
+      margin: 1rem 0;
+    }
+    img {
+      width: 100%;
+      max-width: 290px;
+      border-radius: 14px;
+      margin: 1rem 0;
+    }
+    button {
+      background-color: #e91e63;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <audio id="cutieAudio" loop>
+    <source src="jeev.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="cutie-box">
+    <h1>UFF, Cutie Alert! 😍💘</h1>
+    <p>
+      Kitni cute ho yaar tum... kabhi kabhi dil karta hai frame kar ke rakh lu 😭💖<br>
+      Tera “hmmm” bolna bhi lagta hai like violin baj raha ho 🎻<br>
+      Aankhon mein wo sparkle, baaton mein wo pyar... uff mera dil le gayi tu! 💓<br>
+      Kabhi kabhi sochta hoon duniya dekh ke jalan kyun nhi karti? Itni cuteness overload! 😚
+    </p>
+    <img src="./cute100.jpg" alt="Cutie Pillu" />
+    <button onclick="document.getElementById('cutieAudio').play()">Cutie Song Bajaun? 😘</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Vibes Only 😄💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #e0ffe9, #fef1ff);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow-y: auto;
+    }
+
+    .happy-box {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 25px;
+      padding: 30px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      color: #4caf50;
+      font-size: 2.6rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 2px #fff;
+    }
+
+    p {
+      color: #444;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .happy-img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      animation: bounce 4s infinite;
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #777;
+      margin-top: 0.8rem;
+    }
+
+    .music-btn {
+      margin-top: 1rem;
+      background: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-inline: 10px;
+      transition: 0.3s ease;
+    }
+
+    .music-btn:hover {
+      background: #388e3c;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Music -->
+  <audio id="happyMusic" loop>
+    <source src="./stupid.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="happy-box">
+    <h1>Hasi Teri, Duniya Meri 😄💗</h1>
+    <p>
+      Jab tu hasta hai na... dil literally *dance* karta hai 🕺<br>
+      Tere chehre ki muskan — meri favourite playlist se bhi zyada soothing hai 😍<br>
+      Aaj ka din sirf khushi ke naam, bina stress ke — bas tu, main, aur vibes 🧋
+    </p>
+
+    <img src="./cute.jpg" alt="Rutuja Smiling" class="happy-img" />
+
+    <p class="quote">"Keep smiling cutie... duniya thoda aur pyari lagti hai!"</p>
+
+    <button class="music-btn" onclick="document.getElementById('happyMusic').play()">▶️ Play Music</button>
+    <button class="music-btn" onclick="document.getElementById('happyMusic').pause()">⏸️ Pause</button>
+  </div>
+
+</body>
+</html>
